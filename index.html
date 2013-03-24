@@ -1,0 +1,30 @@
+<html 
+	version="XHTML+RDFa 1.0"
+    xml:lang="en"
+    xmlns="http://www.w3.org/1999/xhtml/">
+<head>
+	<title>JSON2OWL converter</title>
+	<script type="text/javascript" src="./lib/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="convert.js"></script>
+	<script type="text/javascript" src="mindmap2owl.js"></script>
+	<style>
+	#jsoninput,#xmlout{
+		width: 100%;
+		height: 300px;
+	}
+	#base{
+		width: 300px;
+	}
+	</style>
+</head>
+<body>
+<div id="in">
+	<input id="base" type="text" value="http://www.sampleontology.org">
+	<textarea id="jsoninput"></textarea>
+</div>
+<button id="btn_convert">Convert</button>
+<div id="out">
+	<textarea id="xmlout"></textarea>
+</div>
+</body>
+</html>
