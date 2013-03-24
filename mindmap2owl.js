@@ -1,5 +1,4 @@
 $(function(){
-	$('#jsoninput').append(JSON.stringify(tree)); 
 	$('#btn_convert').click(function(){
 		var jsoninput = $('#jsoninput').val();
 		var base = $('#base').val();
