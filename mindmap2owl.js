@@ -1,4 +1,5 @@
 $(function(){
+	$('#jsoninput').append(JSON.stringify(tree)); 
 	$('#btn_convert').click(function(){
 		var jsoninput = $('#jsoninput').val();
 		var base = $('#base').val();
@@ -24,7 +25,8 @@ $(function(){
 
 			$('#xmlout')
 			.append(pre.replace(/</g,'&lt;').replace(/>/g,'&gt;'))
-			.append(classes.join("").replace(/</g,'&lt;').replace(/>/g,'&gt;'));
+			.append(classes.join("").replace(/</g,'&lt;').replace(/>/g,'&gt;'))
+			.append('&lt;/rdf:RDF&gt;');
 		}
 		catch(e){ console.log('Failed to parse JSON: '+e);}
 	})
